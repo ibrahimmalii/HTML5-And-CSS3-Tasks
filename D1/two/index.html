@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>html5</title>
+    <style>
+        header , footer {
+            text-align: center;
+            background-color : rgb(146, 147, 148);
+            padding : 20px;
+        }
+
+
+        nav ul {
+            background-color:lightgray;
+            margin : 0 ;
+        }
+
+        nav li{
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        nav li:hover{
+            color : white
+        }
+
+        #body{
+            display: flex;
+            padding: 20px;
+        }
+
+        #left section , #left article{ 
+            border : 1px solid black;
+            padding :15px;
+        }
+
+        #left section{
+            background-color:#3e3a3a;
+            color : white;
+        }
+
+        #left article{
+            background-color:#f3f3f3;
+        }
+
+        img{
+            width: 150px;
+            height: 155px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Session One About HTML5 And CSS3</header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact us</li>
+        </ul>
+    </nav>
+    <section id="body">
+    <div id="left">
+        <section>
+            This is test about semantic tag
+        </section>
+        <article>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga aperiam deleniti doloribus id? Minima facere id saepe nulla assumenda sequi neque perferendis quis harum. Commodi, eveniet. Cum in magnam est.
+        </article>
+    </div>
+    <div id="right">
+        <img src="image/4.jpg" alt="">
+    </div>
+</section>
+<footer>
+    All &copy;copyright precerved 2021
+</footer>
+</body>
+
+</html>

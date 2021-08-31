@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+    <style>
+        table{
+            width:500px;
+            margin: 10px auto;
+            background-color:cyan;
+            border : 1px solid lightgray;
+            padding: 10px;
+        }
+
+        label{
+            color:rgb(39, 39, 16);
+        }
+
+        input{
+            width: 90%;
+        }
+
+        input[type="radio"]{
+            width:10px;
+        }
+
+        button{
+            width:50px;
+            border-radius: 20px;
+            outline: none;
+            background-color:gray;
+        }
+
+        #sub{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="get" action="#">
+        <table>
+            <tr>
+                <td>
+                    <label for="userName">Username</label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Email">Email</label>
+                </td>
+                <td>
+                    <input type="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Password">Password</label>
+                </td>
+                <td>
+                    <input type="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Phone">Phone</label>
+                </td>
+                <td>
+                    <input type="telephone">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="url">Your Website</label>
+                </td>
+                <td>
+                    <input type="url">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="salary">Expected Salary</label>
+                </td>
+                <td>
+                    <input type="range" value="90">
+                    <!-- <meter min="0" max="100" low="20" height="80" optimum="70" value="50"></meter> -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">Date Of Birth</label>
+                </td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">Country</label>
+                </td>
+                <td>
+                    <input list="country" placeholder="select your country">
+
+                    <datalist id="country">
+                        <option>Ciro</option>
+                        <option>Mahala</option>
+                        <option>Mans</option>
+                        <option>Alex</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="userName">Favourite Color</label>
+                </td>
+                <td>
+                    <input type="color">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cv">CV</label>
+                </td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="temp">Default Temp</label>
+                </td>
+                <td>
+                    <meter min="0" max="100" low="20" height="80" optimum="70" value="50"></meter> 25C
+                </td>
+            </tr>
+            <tr id="sub">
+                <td colspan="2">
+                    <button type="submit">
+                        Submit
+                    </button>
+                    <button type="reset">
+                        Cancel
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
